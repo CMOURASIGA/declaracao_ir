@@ -8,9 +8,9 @@ import requests
 # Função para definir a conexão com base no ambiente escolhido
 def definir_conexao(ambiente):
     if ambiente == 'HML':
-        conn_str = 'DRIVER={SQL Server};SERVER=45.6.154.117,1861;DATABASE=CZ519L_135184_RM_DV;UID=CLT135184GustavoBarros;PWD=qlpkf51796KWRXS@!'
+        conn_str = 'DRIVER={SQL Server};SERVER=45.6.154.117,1861;DATABASE=CZ519L_135184_RM_DV;UID=;PWD=@!'
     elif ambiente == 'PRD':
-        conn_str = 'DRIVER={SQL Server};SERVER=45.6.154.118,38000;DATABASE=CZ519L_135175_RM_PD;UID=CLT135175userti;PWD=jxlap28517DFBZQ@!'
+        conn_str = 'DRIVER={SQL Server};SERVER=45.6.154.118,38000;DATABASE=CZ519L_135175_RM_PD;UID=;PWD=@!'
     else:
         raise ValueError("Ambiente inválido. Escolha HML ou PRD.")
     
